@@ -6,7 +6,11 @@ body{
 }
 img{
 	width: 34%;
-	margin-left: 1rem;
+}
+#header-img{
+	width: 50%;
+	margin-left: 4rem;
+
 }
 header{
 	display: flex;
@@ -88,3 +92,17 @@ li a{
 	#hero-banner-photo.rightRow{
 		text-align: center;
 	}
+
+
+#product-container.container{
+	margin: 2rem;
+}
+
+.product-area p{
+	width: 70%;
+}
+
+.product-area h4{
+	font-size: 20px;
+	margin-bottom: 1rem;
+}
