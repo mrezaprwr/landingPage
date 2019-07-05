@@ -7,3 +7,60 @@ body{
 img{
 	width: 10%;
 }
+header{
+	display: flex;
+	position: fixed;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	padding: 0.6rem;
+
+	-webkit-box-shadow: 6px 9px 31px -4px rgba(0,0,0,0.16);
+	-moz-box-shadow: 6px 9px 31px -4px rgba(0,0,0,0.16);
+	box-shadow: 6px 9px 31px -4px rgba(0,0,0,0.16);
+}
+#logoName{
+	padding: 0;
+	margin: 0;
+}
+.rowTab{
+	display: flex;
+	overflow: auto;
+
+}
+#logo-row.leftRow{
+	width: 38%;
+	vertical-align: top;
+
+}
+#menu-row.rightRow{
+	display: flex;
+	width: 65%;
+	float: right;
+	vertical-align: middle;
+	align-items: center;
+}
+
+ul{
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+li{
+	float: right;
+}
+
+li a{
+	
+	text-align: center;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
