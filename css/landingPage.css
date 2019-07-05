@@ -2,10 +2,11 @@ html{
 
 }
 body{
-	
+	font-family: 'Source Sans Pro', sans-serif;
 }
 img{
-	width: 10%;
+	width: 34%;
+	margin-left: 1rem;
 }
 header{
 	display: flex;
@@ -46,21 +47,44 @@ header{
 }
 
 ul{
-	display: inline-block;
+	display: flex;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	width: 100%;
+
 	overflow: hidden;
 }
 
 li{
 	float: right;
+	font-weight: 700;
 }
 
 li a{
-	
+	color: #000;
+	text-decoration: none;
 	text-align: center;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
+
+/*Hero Banner Container*/
+#hero-banner.container{
+	margin-top: 8rem;
+}
+
+	/*Image in Hero Banner Div*/
+	#banner-img{
+		width: 68%;
+	}
+
+	/*Left Row in Hero Banner Container*/
+	#front-description.leftRow{
+		margin-left: 5rem;
+		padding-top: 5rem;
+	}
+
+	/*Right Row in Hero Banner Container*/
+	#hero-banner-photo.rightRow{
+		text-align: center;
+	}
