@@ -200,12 +200,16 @@ li a{
 	padding-top: 0.8rem;
 	padding-bottom: 0.8rem;
 }
-.product-type{
+.level-plan h4{
+	margin-top: 0rem;
+	margin-bottom: 1.35rem;
+}
+h4.product-type{
 		margin-top: 0.7rem;
 		margin-bottom: 0.7rem;
 }
 .price-wrapper{
-	text-align: center;
+	text-align: center	;
 	padding-right: 0.25rem;
 	padding-left: 0.25rem;
 	margin-top: 1.65rem;
