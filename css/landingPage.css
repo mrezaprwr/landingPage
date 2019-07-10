@@ -3,6 +3,7 @@ html{
 }
 body{
 	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #E8E8E8;
 }
 img{
 	width: 34%;
@@ -10,14 +11,13 @@ img{
 #header-img{
 	width: 50%;
 	margin-left: 4rem;
-
 }
 header{
 	display: flex;
 	position: fixed;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #fff;
+	background-color: red;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -59,7 +59,7 @@ ul{
 	overflow: hidden;
 }
 
-li{
+#menu-row li{
 	float: right;
 	font-weight: 700;
 }
@@ -98,11 +98,110 @@ li a{
 	margin: 2rem;
 }
 
+.product-area{
+	text-align: center;
+	padding: 1rem;
+	background-color: #fff;
+}
+	#product-2.product-area{
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+
+	#product-1.product-area{
+		margin-right: 1rem;
+	}
+	#product-3.product-area{
+		margin-left: 1rem;
+	}	
 .product-area p{
-	width: 70%;
+	width: 100%;
+
+}
+.paragraph-wrap{
+	padding: 2.5rem;
+	padding-top: 0rem;
 }
 
 .product-area h4{
 	font-size: 20px;
 	margin-bottom: 1rem;
+	margin-top: 0.7rem;
+}
+
+
+
+.product-area img{
+	width: 55%;
+}
+
+.section-titles h1{
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+/*Video Container --How It Works-- */
+#video-container.container{
+	text-align: center;
+	padding: 2rem;
+}
+
+#video{
+	max-width: 100%;
+}
+
+/*Pricing Plan */
+
+#pricing-plan.container{
+	padding-left: 2rem;
+	padding-right: 2rem;
+	justify-content: center;
+}
+
+.price-plan{
+	
+	display: block;
+
+	width: calc(100% / 3);
+	margin: 1rem;
+
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+	.price-plan ol{
+		margin: 0;
+		text-align: center;
+		padding: 0;
+	}
+	.price-plan li{
+		max-width: 100%;
+		display: block;
+		padding-bottom: 0.5rem;
+	}
+	#plan-1.price-plan{
+		margin-left: 3rem;
+	}	
+	#plan-3.price-plan{
+		margin-right: 3rem;
+	}
+
+	#plan-2.price-plan{
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+.level-plan{
+	background-color: red;
+	color: white;
+	text-align: center;
+
+	padding: 0.5rem;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+}
+.level-name{
+	font-size: 3.2rem;
+	text-align: center;
+	margin-top: 1.7rem;
 }
