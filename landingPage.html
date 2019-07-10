@@ -45,7 +45,7 @@
 
 	</div>
 	<div class="container" id="product-container">
-		<div class="section-titles"><h1>Our Products</h1></div>
+		<div class="section-titles"><h2>Our Products</h2></div>
 		<div class="rowTab">
 			<div id="product-1" class="product-area">
 				<img src="product-photos/dank-meme-1.png" alt="dank-meme-1" id="memes-1">
@@ -71,7 +71,7 @@
 		</div>
 	</div>
 	<div class="container" id="video-container">
-		<div class="section-titles"><h1>How it Works</h1></div>
+		<div class="section-titles"><h2>How it Works</h2></div>
 		<!--
 		<img src="css/logo1.png" alt="video-temporary" style="width: 25%"> -->
 
@@ -80,7 +80,7 @@
 
 	</div>
 	<div class="container" id="pricing-plan">
-		<div class="section-titles"><h1>Pricing Plan</h1></div>
+		<div class="section-titles"><h2>Pricing Plan</h2></div>
 		<div class="rowTab">
 			<div id="plan-1" class="price-plan">
 				<div class="level-plan">
@@ -138,11 +138,35 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container" id="register">
+		<div class="section-titles"><h2>Register</h2></div>
 		<div class="form-container">
 			<form id="form">
-				<input type="text" name="email-address" id="email">
-				<input type="text" name="" id="submit">
+				<div class="rowTab">
+					<div class="leftRow">
+						<label for="email-address">Name</label>
+						<input type="text" name="full-name" id="name">
+					</div>
+					<div class="rightRow">
+						<label for="email-address">Email</label>
+						<input type="text" name="email-address" id="email">
+					</div>
+				</div>
+				<div class="rowTab">
+					<div class="leftRow">
+						<label for="email-address">Phone Number</label>
+						<input type="number" name="phone-number" id="phone-number">
+					</div>
+					<div class="rightRow">
+						<label for="email-address">Plan to Choose</label>
+						<select class="dropdown-button">
+							<option value="0">Select Plan:</option>
+							<option value="1">Standard</option>
+							<option value="2">Premium</option>
+							<option value="3">Pro</option>
+						</select>
+					</div>
+				</div>
 			</form>
 		</div>
 	</div>
