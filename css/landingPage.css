@@ -2,7 +2,7 @@ html{
 
 }
 body{
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background-color: #E8E8E8;
 }
 img{
@@ -268,20 +268,58 @@ h4.product-type{
 	}
 
 #register.container{
-	background-color: #DCDCDC	;
+	background-color: #fff	;
 }
 #register.container h2{
 	margin-top: 0rem;
 }
 	.form-container{
-		padding: 2rem;
 		padding-top: 1rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
 	}
-	.leftRow,.rightRow{
+	.leftForm,.rightForm{
 		display: flex;
 		flex: 1;
+		flex-direction: column;
 	}
-
 	#form .rowTab{
 		padding-bottom: 1rem;
 	}
+	.rowTab input, .rowTab select{
+		width: 80%;
+		border-radius: 3px;
+		border: 1px solid #dcdcdc;
+
+		padding-top: 0.6rem;
+		padding-bottom: 0.6rem;
+		padding-left: 0.4rem;
+		padding-right: 0.4rem;
+
+		font-size: 1rem;
+	}
+	.rowTab label{
+		padding-bottom: 0.3rem;
+	}
+	#btnArea.rowTab{
+		padding-top: 1rem; 
+	}
+	button.formBtn{
+		flex: 1;
+		width: 83%;
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		font-size: 1rem;
+		font-weight: 500;
+
+		background-color: red;
+		color: #fff;
+		border: 0px;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+		#why.formBtn{
+			background-color: transparent;
+			color: #000;
+			border: 1px solid red;
+		}
