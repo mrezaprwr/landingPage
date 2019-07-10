@@ -113,7 +113,7 @@ li a{
 	}
 	#product-3.product-area{
 		margin-left: 1rem;
-	}	
+	}
 .product-area p{
 	width: 100%;
 
@@ -160,7 +160,7 @@ li a{
 }
 
 .price-plan{
-	
+
 	display: block;
 
 	width: calc(100% / 3);
@@ -182,7 +182,7 @@ li a{
 	}
 	#plan-1.price-plan{
 		margin-left: 3rem;
-	}	
+	}
 	#plan-3.price-plan{
 		margin-right: 3rem;
 	}
@@ -200,8 +200,29 @@ li a{
 	padding-top: 0.8rem;
 	padding-bottom: 0.8rem;
 }
-.level-name{
-	font-size: 3.2rem;
+.product-type{
+		margin-top: 0.7rem;
+		margin-bottom: 0.7rem;
+}
+.price-wrapper{
 	text-align: center;
-	margin-top: 1.7rem;
+	padding-right: 0.25rem;
+	padding-left: 0.25rem;
+	margin-top: 1.65rem;
+	margin-bottom: 1.85rem;
+}
+
+.price-wrapper h2{
+	display: inline-block;
+	font-size: 4.3rem;
+	text-align: center;
+	margin: 0;
+	width: 65%;
+}
+.price-wrapper h4{
+	display: inline-block;
+	width: 15%;
+	margin: 0;
+
+	font-size: 1.5rem;
 }
