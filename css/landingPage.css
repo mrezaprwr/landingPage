@@ -52,12 +52,14 @@ img{
 	align-items: center;
 }
 
-ul{
+#menu-row ul{
 	display: flex;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-
+	margin-left: auto;
+	padding-right: 3.5rem;
+	
 	overflow: hidden;
 }
 
