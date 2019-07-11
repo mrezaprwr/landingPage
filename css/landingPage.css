@@ -3,7 +3,7 @@ html{
 }
 body{
 	font-family: 'Open Sans', sans-serif;
-	background-color: #E8E8E8;
+	background-color: #fff;
 }
 img{
 	width: 34%;
@@ -20,13 +20,14 @@ img{
 	position: fixed;
 	justify-content: space-around;
 	align-items: center;
-	background-color: red;
+	background-color: rgba(255,255,255,0.9);
 	top: 0;
 	left: 0;
 	right: 0;
 
 	padding: 0.6rem;
 
+	/*Drop Shadow*/
 	-webkit-box-shadow: 6px 9px 31px -4px rgba(0,0,0,0.16);
 	-moz-box-shadow: 6px 9px 31px -4px rgba(0,0,0,0.16);
 	box-shadow: 6px 9px 31px -4px rgba(0,0,0,0.16);
@@ -97,18 +98,29 @@ li a{
 	#hero-banner-photo.rightRow{
 		text-align: center;
 	}
-
-
 #product-container.container{
-	margin: 2rem;
-}
+	background-color: #a64ac9;
+	color: white;
+	margin: 0;
+	margin-top: 2rem;
 
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+#product-container .rowTab{
+		padding: 0.5rem;
+		color: black;
+}
 .product-area{
 	text-align: center;
 	padding: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 0.5rem;
 	background-color: #fff;
-
 	cursor: pointer;
+
+	border: 0px;
+	border-radius: 4px;
 }
 	#product-2.product-area{
 		margin-right: 1rem;
@@ -152,7 +164,12 @@ li a{
 #video-container.container{
 	text-align: center;
 	padding: 2rem;
+	background-color: #fccd04;
+	color: white;
 }
+	#video-container h2{
+		padding-bottom: 0.3rem;
+	}
 
 #video{
 	max-width: 100%;
@@ -164,6 +181,9 @@ li a{
 	padding-left: 2rem;
 	padding-right: 2rem;
 	justify-content: center;
+
+	background-color: #f5e6cc;
+	color: black;
 }
 
 .price-plan{
@@ -172,12 +192,17 @@ li a{
 	margin: 1rem;
 	border: 0px;
 	border-radius: 5px;
-	/*Drop Shadow*/
-	box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-	-o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-	-ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+
+	background-color: #fff;
+
+}
+.product-area, .price-plan{
+		/*Drop Shadow*/
+		box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+		-webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+		-o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+		-ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 	.price-plan ol{
 		margin: 0;
@@ -204,9 +229,18 @@ li a{
 		margin-left: 3rem;
 		margin-right: 3rem;
 	}
+	/*#ff6e29*/
+	#plan-1 .level-plan, #plan-1 .planBtn{
+		background-color: #ffb48f;
+	}
+	#plan-2 .level-plan, #plan-2 .planBtn{
+		background-color: #ff6e29;
+	}
+	#plan-3 .level-plan, #plan-3 .planBtn{
+		background-color: #a64a9c;
+	}
 
 .level-plan{
-	background-color: red;
 	color: white;
 	text-align: center;
 
@@ -219,6 +253,7 @@ li a{
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
+
 .level-plan h4{
 	margin-top: 0rem;
 	margin-bottom: 1.35rem;
@@ -316,7 +351,7 @@ h4.product-type{
 		font-size: 1rem;
 		font-weight: 500;
 
-		background-color: red;
+		background-color: #3b945e;
 		color: #fff;
 		border: 0px;
 		border-radius: 3px;
@@ -325,7 +360,14 @@ h4.product-type{
 		#why.formBtn{
 			background-color: transparent;
 			color: #000;
-			border: 1px solid red;
+			border: 1px solid #3b945e;
+			color: #3b945e;
+		}
+		#why.formBtn:hover{
+			background-color: #eee;
+		}
+		#reg.formBtn:hover{
+			background-color: #358555;
 		}
 
 .footer-content{
