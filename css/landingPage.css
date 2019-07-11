@@ -328,7 +328,30 @@ h4.product-type{
 			border: 1px solid red;
 		}
 
-footer{
+.footer-content{
 	padding: 1rem;
 	background-color: #dcdcdc;
 }
+	.footer-content ul{
+		display: flex;
+		justify-content: flex-end;
+		margin: 0;
+	}
+	.footer-content li{
+		list-style: none;
+		padding-left: 0.85rem;
+		padding-right: 0.85rem;
+	}
+	.footer-content span{
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 0.3rem;
+
+		font-size: 0.9rem;
+		color: #444;
+	}
+	.footer-content a#linkGithub{
+		padding-left: 0.3rem;
+		padding-right: 0.3rem;
+		text-decoration: none;
+	}
