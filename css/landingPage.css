@@ -1,6 +1,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	background-color: #fff;
+	margin: 0;
 }
 img{
 	width: 34%;
@@ -77,6 +78,7 @@ li a{
 /*Hero Banner Container*/
 #hero-banner.container{
 	margin-top: 8rem;
+	margin-bottom:  4rem;
 	padding: 0.2rem;
 }
 
@@ -114,39 +116,45 @@ li a{
 	padding-top: 2rem;
 	padding-bottom: 0.5rem;
 	background-color: #fff;
+	color: #000;
 	cursor: pointer;
 
 	border: 0px;
 	border-radius: 4px;
-}
+}	
+	.product-area h4{
+		font-size: 20px;
+		margin-bottom: 1rem;
+		margin-top: 0.7rem;
+	}
+	#product-1.product-area{
+		margin-right: 1rem;
+	}
 	#product-2.product-area{
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
-
-	#product-1.product-area{
-		margin-right: 1rem;
-	}
 	#product-3.product-area{
 		margin-left: 1rem;
 	}
-.product-area p{
-	width: 100%;
+	.product-area:hover{
+		color: #191919;
+	}
+	.product-area a{
+		text-decoration: none;
+		color: #000;
+	}
+	.product-area a:hover{
+		color: #191919;
+	}
+	.product-area img:hover{
+		width: 60%;
+	}
 
-}
 .paragraph-wrap{
 	padding: 2.5rem;
 	padding-top: 0rem;
 }
-
-.product-area h4{
-	font-size: 20px;
-	margin-bottom: 1rem;
-	margin-top: 0.7rem;
-}
-
-
-
 .product-area img{
 	width: 55%;
 }
@@ -230,12 +238,27 @@ li a{
 	#plan-1 .level-plan, #plan-1 .planBtn{
 		background-color: #ffb48f;
 	}
+	/*Darker Shades on Button-1*/
+	#plan-1 button.planBtn:hover{
+		background-color: #E6A281;
+	}
+
 	#plan-2 .level-plan, #plan-2 .planBtn{
 		background-color: #ff6e29;
 	}
+	/*Darker Shades on Button-2*/
+	#plan-2 button.planBtn:hover{
+		background-color: #E66325;
+	}
+
 	#plan-3 .level-plan, #plan-3 .planBtn{
 		background-color: #a64a9c;
 	}
+	/*Darker Shades on Button-3*/
+	#plan-3 button.planBtn:hover{
+		background-color: #95438C;
+	}
+
 
 .level-plan{
 	color: white;
@@ -292,15 +315,12 @@ h4.product-type{
 
 		background-color: #f44336;
 		color: white;
+		font-size: 0.9rem;
 		font-weight: 600;
 		letter-spacing: 0.2px;
 		border: 0px;
 		border-radius: 3px;
-
 		cursor: pointer;
-	}
-	button.planBtn:hover{
-		background-color: ;
 	}
 
 #register.container{
@@ -385,6 +405,7 @@ h4.product-type{
 		display: flex;
 		justify-content: flex-end;
 		margin-top: 0.3rem;
+		margin-right: 0.8rem;
 
 		font-size: 0.9rem;
 		color: #444;
