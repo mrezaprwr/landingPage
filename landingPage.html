@@ -2,24 +2,30 @@
 <html>
 <head>
 	<title></title>
+	
 	<!--Open Sans Google Font-->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+	<!-- Main CSS -->
 	<link rel="stylesheet" type="text/css" href="css/landingPage.css">
+	<!-- Freecodecamp Testing tools -->
+	
 </head>
 <body>
 	<header class="container" id="header">
 			<div class="rowTab">
 				<div class="leftRow" id="logo-row">
 					<!-- <img src="css/logo1.png" alt="logo" id="header-img"> -->
-					<img src="css/Frame2.png" alt="logo" id="header-img">
+					<img id="header-img" src="file:///C:/Users/m.reza.siahaan/Documents/FreeCodeCamp/landingPage/css/Frame2.png" alt="logo">
 				</div>
 				<div class="rightRow" id="menu-row">
-					<ul>
-							<li class="nav-link"><a href="#">Product</a></li>
-							<li class="nav-link"><a href="#">Features</a></li>
-							<li class="nav-link"><a href="#">How It Works</a></li>
-							<li class="nav-link"><a href="#">Pricing</a></li>
-					</ul>
+					<nav id="nav-bar">
+						<ul>
+								<li class="nav-link"><a href="#product-container">Product</a></li>
+								<li class="nav-link"><a href="#video-container">How It Works</a></li>
+								<li class="nav-link"><a href="#pricing-plan">Pricing</a></li>
+								<li class="nav-link"><a href="#register">Register</a></li> 
+						</ul>
+					</nav>
 				</div>
 			</div>
 	</header>
@@ -29,7 +35,8 @@
 			<div class="leftRow" id="front-description">
 				<h1>The All-in-one platform for generating memes.</h1>
 				<p>
-					Marvel has everything you need to bring ideas to life and transform how you create digital products. Placing the power of design in everyone’s hands.
+					Meme Review Community has everything for you as an open source memes framework
+					and able to transform your ideas into digital products.
 				</p>
 			</div>
 			<div class="rightRow" id="hero-banner-photo">
@@ -84,10 +91,10 @@
 					<h4>3 Months Subscription</h4>
 				</div>
 				<ol>
-					<li>Free Stock Photos</li>
-					<li>Free Stock Photos</li>
-					<li>Cheat Sheet</li>
-					<li>More Exposure</li>
+					<li>No meme hacks</li>
+					<li>15 days Stock Photos</li>
+					<li>Limited Cheat Sheet</li>
+					<li>No Exposure</li>
 				</ol>
 				<div class="button-wrapper">
 					<button class="planBtn">Choose Plan</button>
@@ -102,9 +109,9 @@
 					<h4>6 Months Subscription</h4>
 				</div>
 				<ol>
+					<li>5 hours meme hacks per day</li>
 					<li>Free Stock Photos</li>
-					<li>Free Stock Photos</li>
-					<li>Cheat Sheet</li>
+					<li>Free Cheat Sheet</li>
 					<li>More Exposure</li>
 				</ol>
 				<div class="button-wrapper">
@@ -119,10 +126,10 @@
 				<h4>12 Months Subscription</h4>
 			</div>
 				<ol>
+					<li>Unlimited Meme hacks</li>
 					<li>Free Stock Photos</li>
-					<li>Free Stock Photos</li>
-					<li>Cheat Sheet</li>
-					<li>More Exposure</li>
+					<li>Free Cheat Sheet</li>
+					<li>Unlimited Exposure</li>
 				</ol>
 				<div class="button-wrapper">
 					<button class="planBtn">Choose Plan</button>
@@ -142,7 +149,7 @@
 					</div>
 					<div class="rightForm">
 						<label for="email-address">Email</label>
-						<input type="text" name="email-address" id="email">
+						<input type="text" name="email" id="email" placeholder="abc@example.com">
 					</div>
 				</div>
 				<div class="rowTab">
@@ -152,8 +159,12 @@
 					</div>
 					<div class="rightForm">
 						<label for="email-address">Plan to Choose</label>
-						<select class="dropdown-button">
-							<option value="0">Select Plan:</option>
+						<!--
+						<div class="dropdown-button">
+							<i class="fa fa-angle-down" aria-hidden="true"></i>
+						</div> -->
+						<select>
+							<option value="0" disabled>Select Plan<i class="fa fa-angle-down" aria-hidden="true"></i></option>
 							<option value="1">Standard</option>
 							<option value="2">Premium</option>
 							<option value="3">Pro</option>
@@ -162,10 +173,12 @@
 				</div>
 				<div class="rowTab" id="btnArea">
 					<div class="leftForm">
-						<button class="formBtn" id="why">Why Us?</button>
+						<input type="submit" value="Why Us?" class="formBtn" id="why">
 					</div>
 					<div class="rightForm">
-						<button class="formBtn" id="reg">Register</button>
+						<a href="https://www.freecodecamp.com/email-submit" style="text-decoration: none">
+							<input type="submit" value="Register" class="formBtn" id="reg">
+						</a>
 					</div>
 				</div>
 			</form>
@@ -179,6 +192,6 @@
 		</ul>
 		<span>Copyright 2019, <a id="linkGithub" href="https://github.com/mrezaprwr">Reza Siahaan</a> on Github</span>
 	</footer>
-
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

@@ -51,7 +51,7 @@ img{
 	align-items: center;
 }
 
-#menu-row ul{
+#menu-row nav{
 	display: flex;
 	list-style-type: none;
 	margin: 0;
@@ -60,6 +60,10 @@ img{
 	padding-right: 3.5rem;
 
 	overflow: hidden;
+}
+#menu-row ul{
+	display: flex;
+	list-style-type: none;
 }
 
 #menu-row li{
@@ -74,6 +78,7 @@ li a{
 	text-decoration: none;
 	text-align: center;
 }
+
 
 /*Hero Banner Container*/
 #hero-banner.container{
@@ -121,7 +126,8 @@ li a{
 
 	border: 0px;
 	border-radius: 4px;
-}	
+}
+
 	.product-area h4{
 		font-size: 20px;
 		margin-bottom: 1rem;
@@ -138,7 +144,7 @@ li a{
 		margin-left: 1rem;
 	}
 	.product-area:hover{
-		color: #191919;
+		color: #4D4D4D;
 	}
 	.product-area a{
 		text-decoration: none;
@@ -181,7 +187,6 @@ li a{
 }
 
 /*Pricing Plan */
-
 #pricing-plan.container{
 	padding-left: 2rem;
 	padding-right: 2rem;
@@ -342,6 +347,9 @@ h4.product-type{
 	#form .rowTab{
 		padding-bottom: 1rem;
 	}
+	#form input:focus, #form select:active{
+		border: 1px solid #358555;
+	}
 	.rowTab input, .rowTab select{
 		width: 80%;
 		border-radius: 3px;
@@ -351,7 +359,6 @@ h4.product-type{
 		padding-bottom: 0.6rem;
 		padding-left: 0.4rem;
 		padding-right: 0.4rem;
-
 		font-size: 1rem;
 	}
 	.rowTab label{
@@ -360,7 +367,7 @@ h4.product-type{
 	#btnArea.rowTab{
 		padding-top: 1rem;
 	}
-	button.formBtn{
+	input.formBtn {
 		flex: 1;
 		width: 83%;
 		padding-top: 0.8rem;
