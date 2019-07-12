@@ -365,33 +365,30 @@ h4.product-type{
 		padding-bottom: 0.3rem;
 	}
 	#btnArea.rowTab{
+		display: block;
 		padding-top: 1rem;
+		text-align: center;
 	}
 	input.formBtn {
 		flex: 1;
-		width: 83%;
+		width: 53%;
 		padding-top: 0.8rem;
 		padding-bottom: 0.8rem;
 		font-size: 1rem;
 		font-weight: 500;
 
-		background-color: #3b945e;
-		color: #fff;
-		border: 0px;
-		border-radius: 3px;
+		background-color: transparent;
+		color: #3b945e;
+		border: 1px solid #3b945e;
+		border-radius: 4px;
 		cursor: pointer;
 	}
-		#why.formBtn{
-			background-color: transparent;
-			color: #000;
-			border: 1px solid #3b945e;
-			color: #3b945e;
-		}
-		#why.formBtn:hover{
-			background-color: #eee;
+		#reg.formBtn{
+			display: inline-block;
 		}
 		#reg.formBtn:hover{
 			background-color: #358555;
+			color: #fff;
 		}
 
 .footer-content{
