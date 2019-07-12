@@ -61,6 +61,11 @@ img{
 
 	overflow: hidden;
 }
+/*Hide bar icon in desktop mode*/
+#nav-bar i{
+	display: none;
+}
+
 #menu-row ul{
 	display: flex;
 	list-style-type: none;
@@ -383,10 +388,10 @@ h4.product-type{
 		border-radius: 4px;
 		cursor: pointer;
 	}
-		#reg.formBtn{
+		#submit.formBtn{
 			display: inline-block;
 		}
-		#reg.formBtn:hover{
+		#submit.formBtn:hover{
 			background-color: #358555;
 			color: #fff;
 		}
@@ -418,4 +423,70 @@ h4.product-type{
 		padding-left: 0.3rem;
 		padding-right: 0.3rem;
 		text-decoration: none;
+	}
+
+	@media screen and (max-width: 479px){
+		#logo-row{
+			padding-top: 0.4rem;
+			padding-bottom: 0.4rem;
+		}
+			img#header-img{
+				width: 100%;
+				margin-left: 1rem;
+			}
+		#nav-bar li{
+			display: none;
+		}
+			#nav-bar a.icon{
+				display: block;
+				float: right;
+			}
+		#hero-banner .rowTab{
+			display: flex;
+			overflow: auto;
+			align-items: center;
+			flex-direction: column-reverse;
+		}
+		#front-description.leftRow{
+			margin-left: 0rem;
+			padding-top: 0rem;
+			padding-left: 2rem;
+			padding-right: 2rem;
+
+			text-align: center;
+		}
+
+		.product-area, .price-plan{
+			min-width: 78%;
+		}
+		.paragpraph-wrap{
+			padding-top: 1.3rem;
+			padding-top: 0rem;
+		}
+			#plan-1.price-plan {
+				margin-left: 1rem;
+			}
+			#plan-2.price-plan {
+				margin-left: 1rem;
+				margin-right: 1rem;
+			}
+			#plan-3.price-plan {
+				margin-right: 1rem;
+			}
+		.price-wrapper{
+			padding-right: 0rem;
+			padding-left: 0rem;
+			display: flex;
+			overflow: auto;
+		}
+			.price-wrapper h2{
+				width: 55%;
+				float: left;
+			}
+			.price-wrapper h4{
+				width: 15%;
+				float: right;
+				
+			}
+			
 	}
