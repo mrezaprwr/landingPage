@@ -57,7 +57,7 @@ img{
 	margin: 0;
 	padding: 0;
 	margin-left: auto;
-	padding-right: 3.5rem;
+	padding-right: 1rem;
 
 	overflow: hidden;
 }
@@ -476,17 +476,33 @@ h4.product-type{
 		.price-wrapper{
 			padding-right: 0rem;
 			padding-left: 0rem;
-			display: flex;
-			overflow: auto;
+			margin-bottom: 1.7rem;
 		}
 			.price-wrapper h2{
-				width: 55%;
-				float: left;
+				display: inline-block;
+				font-size: 4rem;
+				width: 67%;
+				margin: auto;
 			}
 			.price-wrapper h4{
+				display: inline-block;
+				font-size: 1.3rem;
 				width: 15%;
-				float: right;
+			}
+		.form-container{
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+			.form-container .rowTab{
+				flex-direction: column;
+				overflow: visible;
 				
+			}
+			.form-container input{
+				width: 90%;
+			}
+			.form-container .leftForm{
+				padding-bottom: 0.3rem;
 			}
 			
 	}
