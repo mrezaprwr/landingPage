@@ -10,6 +10,9 @@ img{
 	width: 40%;
 	margin-left: 4rem;
 }
+#img-responsive{
+	display: none;
+}
 .container{
 	padding: 2rem;
 }
@@ -44,11 +47,7 @@ img{
 
 }
 #menu-row.rightRow{
-	display: flex;
 	width: 65%;
-	float: right;
-	vertical-align: middle;
-	align-items: center;
 }
 
 #menu-row nav{
@@ -57,28 +56,26 @@ img{
 	margin: 0;
 	padding: 0;
 	margin-left: auto;
-	padding-right: 1rem;
+	margin-right: 2.5rem;
+	margin-top: 1.1rem;
 
+	text-align: right;
+    float: right;
 	overflow: hidden;
-}
-/*Hide bar icon in desktop mode*/
-#nav-bar i{
-	display: none;
 }
 
 #menu-row ul{
-	display: flex;
+	display: inline-block;
 	list-style-type: none;
 }
-
-#menu-row li{
-	float: right;
+#menu-row a{
+	float: left;
 	font-weight: 700;
 	padding-left: 1.3rem;
 	padding-right: 1.3rem;
 }
 
-li a{
+a{
 	color: #000;
 	text-decoration: none;
 	text-align: center;
@@ -425,21 +422,49 @@ h4.product-type{
 		text-decoration: none;
 	}
 
-	@media screen and (max-width: 479px){
+	label.icon{
+		font-size: 28px;
+	}
+	#toggle {
+		display:none;
+	}
+
+@media screen and (max-width: 479px){
+		#menu-bar{
+			display: inline-block;
+			margin-top: 0.8rem;
+			margin-right: 0.5rem;
+		}
+		#menu-bar a{
+			font-size: 0.95rem;
+			padding: 0;
+			padding-left: 0.4rem;
+			padding-right: 0.4rem; 
+		}
+		#logo-row.leftRow{
+			display: inline-block;
+			width: 20%;
+		}
+		#menu-row.rightRow{
+			display: block;
+			width: 80%;
+		}
+		#nav-bar.nav-menu{
+			margin: 0;
+			padding: 0;
+		}
+
+		#img-responsive{
+			display: block;
+			width: 33%;
+			margin-left: 0.8rem;
+		}
 		#logo-row{
 			padding-top: 0.4rem;
 			padding-bottom: 0.4rem;
 		}
 			img#header-img{
-				width: 100%;
-				margin-left: 1rem;
-			}
-		#nav-bar li{
-			display: none;
-		}
-			#nav-bar a.icon{
-				display: block;
-				float: right;
+				display: none;
 			}
 		#hero-banner .rowTab{
 			display: flex;
@@ -504,5 +529,4 @@ h4.product-type{
 			.form-container .leftForm{
 				padding-bottom: 0.3rem;
 			}
-			
-	}
+}
